@@ -3,6 +3,7 @@ URL = "https://nypd.radio12.org/icecast/"
 radios_by_borough = {
     "bk": [
         "ALT-nypd-bk-60-61",
+        "ALT-nypd-bk-62-68",
         "ALT-nypd-bk-63-69",
         "ALT-nypd-bk-66-70",
         "ALT-nypd-bk-67-71",
@@ -34,7 +35,7 @@ radios_by_borough = {
         "ALT-nypd-qn-109",
         "ALT-nypd-queens-110-115",
     ],
-    "cw": ["nypd-cw-1", "nypd-cw-2", "ALT-nypd-cw-3", "ALT-nypd-cw-4"],
+    "cw": ["nypd-cw-1", "nypd-cw-2", "ALT-nypd-cw-3", "ALT-nypd-cw-4", "ALT-nypd-sod"],
     "bx": [
         "ALT-nypd-bx-40-41",
         "ALT-nypd-bx-42-44",
