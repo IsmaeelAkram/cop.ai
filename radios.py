@@ -9,13 +9,13 @@ class Source:
         server_name: str,
         server_description: str,
         server_type: str,
-        listenurl: str,
+        listen_url: str,
     ) -> None:
         self.genre = genre
         self.server_name = server_name
         self.server_description = server_description
         self.server_type = server_type
-        self.listenurl = listenurl
+        self.listen_url = listen_url
 
 
 URL = "https://nypd.radio12.org/icecast/"
@@ -69,7 +69,7 @@ sources = []
 STATUS_URL = "https://nypd.radio12.org/icecast/status-json.xsl"
 
 
-def get_sources():
+def fill_sources():
     r = requests.get(STATUS_URL)
     data = json.loads(r.text)
 
@@ -79,7 +79,9 @@ def get_sources():
             server_name=source["server_name"],
             server_description=source["server_description"],
             server_type=source["server_type"],
-            listenurl=source["listenurl"],
+            listen_url=source["listenurl"].replace(
+                "http://nypd.radio12.org:8000", "https://nypd.radio12.org/icecast"
+            ),
         )
         sources.append(source)
 
