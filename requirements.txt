@@ -1,0 +1,4 @@
+pychalk
+requests
+pyaudio
+transformers

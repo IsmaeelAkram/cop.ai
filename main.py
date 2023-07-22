@@ -5,7 +5,7 @@ import threading
 import time
 import os
 import chalk
-from pprint import pprint
+import transformers
 
 SAMPLE_LENGTH = 10  # in seconds
 
