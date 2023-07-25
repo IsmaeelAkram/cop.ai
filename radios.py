@@ -18,7 +18,7 @@ class Source:
         self.listen_url = listen_url
 
 
-URL = "https://nypd.radio12.org/icecast/"
+
 by_borough = {
     "bk": [
         "ALT-nypd-bk-60-61",
@@ -64,10 +64,10 @@ by_borough = {
         "ALT-nypd-bx-50-52",
     ],
 }
+
 sources = []
-
+URL = "https://nypd.radio12.org/icecast/"
 STATUS_URL = "https://nypd.radio12.org/icecast/status-json.xsl"
-
 
 def fill_sources():
     r = requests.get(STATUS_URL)
